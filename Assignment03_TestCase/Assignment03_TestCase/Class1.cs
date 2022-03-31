@@ -92,6 +92,7 @@ public class DefaultSuiteTest
         driver.FindElement(By.Id("city")).SendKeys("Hamilton");
         driver.FindElement(By.Id("provience")).Click();
         {
+            
             var dropdown = driver.FindElement(By.Id("provience"));
             dropdown.FindElement(By.XPath("//option[. = 'QB']")).Click();
         }
